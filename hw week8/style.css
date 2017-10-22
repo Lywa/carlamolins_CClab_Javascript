@@ -1,4 +1,72 @@
 body {
-  background: #eeeeee;
-  font-family: “Trebuchet MS”, Verdana, Arial, serif;
+
+background-image: url('./img/background.jpg');
+background-color: #4b4b4b;
+font-family: 'Roboto', sans-serif;
+/*font-weight: 700;*/
+color: #ffffff;   
+margin:0;
+
+/*float: center;*/
+/*text-align: center;*/
+
+
 }
+
+#title{
+
+	font-size: 60px;
+	width: 600px;
+	margin-top: 10vh;
+	margin-left: 5vw;
+	font-weight: 700;
+	margin-bottom: 0vh;
+
+
+
+}
+
+#description{
+
+	font-size: 30px;
+	
+	margin-left: 5vw;
+	font-weight: 400;
+	width: 500px;
+	margin-bottom: 0vh;
+
+
+
+}
+
+#character{
+
+	font-size: 40px;
+	
+	margin-left: 48vw;
+	font-weight: 700;
+	color: #151821;
+	width: 200px;
+	text-align: center;
+	float: center;
+}
+
+
+#ajaxButton{
+
+
+	width: 329px;
+    height: 90px;
+    background-color: #151821;
+    border-radius: 10px;
+	font-family: Roboto;
+	font-size: 40px;
+	font-weight: 500;
+	color: #ffffff;
+	text-align: center;
+	display: block;
+	/*position: relative;*/
+	margin-top: 10vh;
+	margin-left: 5vw;
+}
+
