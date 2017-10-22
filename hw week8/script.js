@@ -27,10 +27,10 @@ var description = document.getElementById("description");
       alert("It did not work :(");
       return false;
     }
-    //var randomId = Math.floor(Math.random()*1000);
+    var randomId = Math.floor(Math.random()*1000);
     httpRequest.onreadystatechange = fillInfo;
     httpRequest.open(
-      "GET", "https://www.anapioficeandfire.com/api/characters/878"
+      "GET", `https://www.anapioficeandfire.com/api/characters/${randomId}`
       );
     httpRequest.send();
   }
@@ -42,6 +42,16 @@ var description = document.getElementById("description");
     if (httpRequest.readyState === XMLHttpRequest.DONE) {
       if (httpRequest.status === 200) {
           console.log(httpRequest.responseText);
+          responseContent = JSON.parse(httpRequest.responseText);
+          console.log(responseContent);
+          console.log(responseContent.name);
+
+          character.innerHTML=responseContent.name;
+          //var parsed = JSON.parse(responseContent);
+          //console.log(parsed.name);
+
+
+          //console.log(httpRequest.responeText.name);
         
 //         /*Save the response in responseContent variable.
 //         Note that the response has ' ' around it. This means it is a String.*/
